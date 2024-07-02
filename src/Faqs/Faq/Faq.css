@@ -1,0 +1,63 @@
+.faq {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0.075em solid hsl(var(--neutral-blue-vals) / 40%);
+}
+
+label {
+  color: var(--neutral-dark-blue);
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding-block: var(--gap-s);
+}
+label:hover {
+  color: black;
+}
+label:hover svg {
+  stroke: hsl(231, 69%, 40%);
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  left: -999px;
+}
+
+input:focus-visible + label {
+    outline: .25em solid var(--primary-blue);
+    outline-offset: .2em;
+}
+.faq-answer {
+  padding-block: 0;
+  color: var(--neutral-blue);
+  line-height: 1.6;
+  height: 0;
+  overflow: hidden;
+  transition: 0.25s height linear, 0.3s 0s padding-block linear;
+}
+
+input:checked ~ .faq-answer {
+  height: 5lh;
+  padding-block: var(--gap-s) var(--gap);
+}
+
+svg {
+  transition: 0.25s linear transform;
+}
+
+input:checked + label svg {
+  transform: rotate(180deg);
+  stroke: var(--primary-red);
+}
+input:checked + label:hover svg {
+  transform: rotate(180deg);
+  stroke: hsl(0, 94%, 46%);
+}
+
+@media (min-width: 48.75em) {
+  input:checked ~ .faq-answer {
+    height: 4lh;
+    padding-block: var(--gap-s) var(--gap);
+  }
+}

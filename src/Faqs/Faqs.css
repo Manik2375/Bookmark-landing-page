@@ -1,0 +1,41 @@
+.faqs {
+  padding-inline: var(--gap);
+  margin-inline: auto;
+  margin-top: var(--gap-xxl);
+  max-width: 55ch;
+}
+.faqs-content {
+  text-align: center;
+  margin-bottom: var(--gap-l);
+}
+.faqs h4 {
+  color: var(--neutral-dark-blue);
+  font-size: var(--step-2);
+}
+.faqs p {
+  margin-top: var(--gap);
+  color: var(--neutral-blue);
+}
+
+.btn-more-info {
+  display: block;
+  margin-inline: auto;
+  margin-top: var(--gap-l);
+  text-decoration: none;
+  color: white;
+  padding: var(--gap-s) var(--gap);
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--primary-blue);
+  border: 0;
+  cursor: pointer;
+  border-radius: 0.35em;
+  box-shadow: 0 0.25em 0.5em hsl(var(--primary-blue-vals) / 30%);
+}
+
+.btn-more-info:is(:hover, :focus-visible) {
+  box-shadow: none;
+  color: var(--primary-blue);
+  background: white;
+  outline: 0.24em solid var(--primary-blue);
+}

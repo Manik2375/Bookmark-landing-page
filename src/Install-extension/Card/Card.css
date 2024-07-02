@@ -1,0 +1,63 @@
+.card {
+  position: relative;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap);
+  padding: var(--gap);
+  border-radius: 0.5em;
+  box-shadow: 0 0.35em 1em hsl(var(--neutral-blue-vals) / 30%);
+}
+.card > img {
+  max-width: 40%;
+  height: auto;
+}
+
+.card-content > h4 {
+  color: var(--neutral-dark-blue);
+  font-size: var(--step-1);
+}
+.card-content > span {
+  display: inline-block;
+  margin-top: var(--gap-xs);
+  color: var(--neutral-blue);
+  font-weight: 500;
+}
+.install-link {
+  margin-top: var(--gap-l);
+  color: white;
+  padding: var(--gap-s) var(--gap);
+  text-decoration: none;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--primary-blue);
+  border: 0;
+  cursor: pointer;
+  border-radius: 0.35em;
+  box-shadow: 0 0.25em 0.5em hsl(var(--primary-blue-vals) / 30%);
+}
+.install-link:is(:hover, :focus-visible) {
+  box-shadow: none;
+  color: var(--primary-blue);
+  background: white;
+  outline: 0.24em solid var(--primary-blue);
+}
+
+.dots-decoration {
+  position: absolute;
+  bottom: 30%;
+  left: 0;
+  right: 0;
+}
+.dots-decoration > img {
+  width: 100%;
+}
+@media (min-width: 48.75em) {
+  .card:first-child {
+    transform: translateY(calc(-1 * var(--displacement)));
+  }
+  .card:last-child {
+    transform: translateY(var(--displacement));
+  }
+}

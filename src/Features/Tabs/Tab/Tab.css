@@ -1,0 +1,42 @@
+.tab-button {
+    position: relative;
+    font-size: var(--step-0);
+    background: transparent;
+    border: 0;
+    font-family: inherit;
+    font-weight: 500;
+    color: var(--neutral-blue);
+    padding: var(--gap-s);
+    border-top: .075em solid hsl(var(--neutral-blue-vals) / 40%);
+    cursor: pointer;
+}
+.tab-button:last-child {
+    border-bottom: .075em solid hsl(var(--neutral-blue-vals) / 40%);
+}
+.tab-button:hover {
+    color: var(--neutral-dark-blue);
+}
+.tab-button.active {
+    color: var(--neutral-dark-blue);
+}
+.tab-button.active::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 50%;
+    height: .25em;
+    background: var(--primary-red);
+}
+
+@media (min-width: 48.75em) {
+    .tab-button {
+        padding: var(--gap);
+        border-top: 0;
+        border-bottom: .075em solid hsl(var(--neutral-blue-vals) / 40%);
+    }
+    .tab-button.active::after {
+        width: 100%;
+    }
+}

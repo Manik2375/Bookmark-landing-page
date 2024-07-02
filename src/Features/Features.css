@@ -1,0 +1,16 @@
+.features-content {
+    max-width: 53ch;
+    margin-inline: auto;
+    margin-top: var(--gap-l);
+    margin-bottom: var(--gap-s);
+    text-align: center;
+    padding: var(--gap);
+}
+h2 {
+    font-size: var(--step-2);
+    color: var(--neutral-dark-blue);
+    margin-bottom: var(--gap-s)
+}
+p {
+    color: var(--neutral-blue)
+}
