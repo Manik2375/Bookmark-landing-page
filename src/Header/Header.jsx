@@ -33,7 +33,7 @@ export default function Header() {
           </g>
         </svg>
       </h1>
-      <button className="hamburger-menu" onClick={handleClick}>
+      <button className="hamburger-menu" onClick={handleClick} aria-label="Hamburger menu to show navbar">
         {navActive ? (
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15">
             <path
