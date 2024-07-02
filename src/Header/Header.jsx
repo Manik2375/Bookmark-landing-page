@@ -68,7 +68,7 @@ export default function Header() {
           </li>
         </ul>
         <div className="social-links">
-          <a href="#">
+          <a href="#" aria-label="Facebook Logo">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -81,7 +81,7 @@ export default function Header() {
               />
             </svg>
           </a>
-          <a href="#">
+          <a href="#" aria-label="Twitter Logo">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"

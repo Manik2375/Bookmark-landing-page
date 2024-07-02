@@ -10,7 +10,6 @@ export default function Faq({ question, answer, index }) {
         onFocus={(e) => {
           e.preventDefault();
         }}
-        aria-hidden="true"
       />
       <label htmlFor={"faq-" + index} aria-label="Show the Faq">
         {question}{" "}

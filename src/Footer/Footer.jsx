@@ -57,7 +57,7 @@ export default function Footer() {
           </li>
         </ul>
         <div className="social-links">
-          <a href="#">
+          <a href="#" aria-label="Facebook logo">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -70,7 +70,7 @@ export default function Footer() {
               />
             </svg>
           </a>
-          <a href="#">
+          <a href="#" aria-label="Twitter Logo">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
