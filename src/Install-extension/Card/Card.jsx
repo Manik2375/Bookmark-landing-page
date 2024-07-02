@@ -1,5 +1,5 @@
 import "./Card.css";
-import dot from "/src/assets/bg-dots.svg"
+import dot from "/src/assets/bg-dots.svg";
 
 // eslint-disable-next-line react/prop-types
 export default function Card({ imgSrc, browser, minVersion }) {

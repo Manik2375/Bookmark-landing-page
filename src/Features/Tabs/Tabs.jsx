@@ -4,9 +4,9 @@ import "./Tabs.css";
 import Tab from "./Tab/Tab.jsx";
 import Result from "./Result/Result.jsx";
 
-import TabImg1 from  "/src/assets/illustration-features-tab-1.svg";
+import TabImg1 from "/src/assets/illustration-features-tab-1.svg";
 import TabImg2 from "/src/assets/illustration-features-tab-2.svg";
-import TabImg3 from "/src/assets/illustration-features-tab-3.svg"
+import TabImg3 from "/src/assets/illustration-features-tab-3.svg";
 
 const tabs = [
   {

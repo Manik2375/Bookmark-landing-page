@@ -75,7 +75,7 @@ p {
   .result-more-info-btn {
     display: block;
   }
-  .img-container::before  {
+  .img-container::before {
     width: 80%;
   }
 }

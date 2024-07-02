@@ -1,9 +1,9 @@
 import "./Install-extension.css";
 
 import Card from "./Card/Card.jsx";
-import ChromeLogo from "/src/assets/logo-chrome.svg"
-import FireFoxLogo from "/src/assets/logo-firefox.svg"
-import OperaLogo from "/src/assets/logo-opera.svg"
+import ChromeLogo from "/src/assets/logo-chrome.svg";
+import FireFoxLogo from "/src/assets/logo-firefox.svg";
+import OperaLogo from "/src/assets/logo-opera.svg";
 
 export default function Install() {
   return (
@@ -16,21 +16,9 @@ export default function Install() {
         </p>
       </div>
       <div className="card-container">
-        <Card
-          imgSrc={ChromeLogo}
-          browser="Chrome"
-          minVersion="62"
-        />
-        <Card
-          imgSrc={FireFoxLogo}
-          browser="FireFox"
-          minVersion="55"
-        />
-        <Card
-          imgSrc={OperaLogo}
-          browser="Opera"
-          minVersion="46"
-        />
+        <Card imgSrc={ChromeLogo} browser="Chrome" minVersion="62" />
+        <Card imgSrc={FireFoxLogo} browser="FireFox" minVersion="55" />
+        <Card imgSrc={OperaLogo} browser="Opera" minVersion="46" />
       </div>
     </div>
   );

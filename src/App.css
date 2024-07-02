@@ -1,37 +1,36 @@
 :root {
-    --primary-blue: hsl(231, 69%, 60%);
-    --primary-blue-vals: 231 69% 60%;
-    --primary-red: hsl(0, 94%, 66%);
-    --neutral-blue: hsl(229, 8%, 60%);
-    --neutral-blue-vals: 229 8% 60%;
-    --neutral-dark-blue: hsl(229, 31%, 21%);
-    --neutral-dark-blue-vals: 229 31% 21%
-
+  --primary-blue: hsl(231, 69%, 60%);
+  --primary-blue-vals: 231 69% 60%;
+  --primary-red: hsl(0, 94%, 66%);
+  --neutral-blue: hsl(229, 8%, 60%);
+  --neutral-blue-vals: 229 8% 60%;
+  --neutral-dark-blue: hsl(229, 31%, 21%);
+  --neutral-dark-blue-vals: 229 31% 21%;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    width: 100%;
-    min-height: 100vh;
-    font-family: "Rubik", sans-serif;
-    font-size: var(--step-0)
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Rubik", sans-serif;
+  font-size: var(--step-0);
 }
 #root {
-    display: flex;
-    flex-direction: column;
-    gap: var(--gap-l);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-l);
 }
 
 p {
-    line-height: 1.5;
+  line-height: 1.5;
 }
 #root {
-    max-width: 60em;
-    margin-inline: auto;
-    overflow-x: hidden;
+  max-width: 60em;
+  margin-inline: auto;
+  overflow-x: hidden;
 }
