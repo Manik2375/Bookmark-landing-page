@@ -146,6 +146,10 @@
   gap: var(--gap);
   margin-top: var(--gap-s);
 }
+.social-links > a {
+  display: flex;
+  align-items: center;
+}
 
 .social-links > a > svg:hover {
   fill: var(--primary-red);
@@ -172,5 +176,6 @@
     margin-left: auto;
     margin-right: var(--gap-l);
     gap: var(--gap);
+    margin-top: 0;
   }
 }
