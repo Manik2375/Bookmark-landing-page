@@ -40,7 +40,7 @@ input:focus-visible + label {
 }
 
 input:checked ~ .faq-answer {
-  height: 5lh;
+  height: 6.5lh;
   padding-block: var(--gap-s) var(--gap);
 }
 
